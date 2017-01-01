@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B57A3FFCAEB4DA80E099DA0 /* Pods_PopupDialogTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA7A1D44A54F85B4B4B629E /* Pods_PopupDialogTableView.framework */; };
 		C7C699F31E1800E80040CF29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C699F21E1800E80040CF29 /* AppDelegate.swift */; };
 		C7C699F51E1800E80040CF29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C699F41E1800E80040CF29 /* ViewController.swift */; };
 		C7C699F81E1800E80040CF29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7C699F61E1800E80040CF29 /* Main.storyboard */; };
 		C7C699FA1E1800E80040CF29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7C699F91E1800E80040CF29 /* Assets.xcassets */; };
 		C7C699FD1E1800E80040CF29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7C699FB1E1800E80040CF29 /* LaunchScreen.storyboard */; };
+		C7C69A051E1803A10040CF29 /* PopupTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C69A041E1803A10040CF29 /* PopupTableView.swift */; };
+		C7C69A071E1806790040CF29 /* PopupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C69A061E1806790040CF29 /* PopupTableViewController.swift */; };
+		C7C69A091E180B560040CF29 /* PopupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C69A081E180B560040CF29 /* PopupTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EA7A1D44A54F85B4B4B629E /* Pods_PopupDialogTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopupDialogTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A153E064EE710C60BE20EF93 /* Pods-PopupDialogTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopupDialogTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopupDialogTableView/Pods-PopupDialogTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		A4D40C0AF78D9849CDE1093A /* Pods-PopupDialogTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopupDialogTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopupDialogTableView/Pods-PopupDialogTableView.release.xcconfig"; sourceTree = "<group>"; };
 		C7C699EF1E1800E80040CF29 /* PopupDialogTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopupDialogTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C699F21E1800E80040CF29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7C699F41E1800E80040CF29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		C7C699F91E1800E80040CF29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7C699FC1E1800E80040CF29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7C699FE1E1800E80040CF29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7C69A041E1803A10040CF29 /* PopupTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupTableView.swift; sourceTree = "<group>"; };
+		C7C69A061E1806790040CF29 /* PopupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupTableViewController.swift; sourceTree = "<group>"; };
+		C7C69A081E180B560040CF29 /* PopupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B57A3FFCAEB4DA80E099DA0 /* Pods_PopupDialogTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44488E9C909AC0BB1DE7F0F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EA7A1D44A54F85B4B4B629E /* Pods_PopupDialogTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A461A60FEC40F5B918BADAC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A153E064EE710C60BE20EF93 /* Pods-PopupDialogTableView.debug.xcconfig */,
+				A4D40C0AF78D9849CDE1093A /* Pods-PopupDialogTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C7C699E61E1800E80040CF29 = {
 			isa = PBXGroup;
 			children = (
 				C7C699F11E1800E80040CF29 /* PopupDialogTableView */,
 				C7C699F01E1800E80040CF29 /* Products */,
+				A461A60FEC40F5B918BADAC9 /* Pods */,
+				44488E9C909AC0BB1DE7F0F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +90,9 @@
 				C7C699F91E1800E80040CF29 /* Assets.xcassets */,
 				C7C699FB1E1800E80040CF29 /* LaunchScreen.storyboard */,
 				C7C699FE1E1800E80040CF29 /* Info.plist */,
+				C7C69A041E1803A10040CF29 /* PopupTableView.swift */,
+				C7C69A061E1806790040CF29 /* PopupTableViewController.swift */,
+				C7C69A081E180B560040CF29 /* PopupTableViewCell.swift */,
 			);
 			path = PopupDialogTableView;
 			sourceTree = "<group>";
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7C69A011E1800E80040CF29 /* Build configuration list for PBXNativeTarget "PopupDialogTableView" */;
 			buildPhases = (
+				B77B679D84CA48309B160B60 /* [CP] Check Pods Manifest.lock */,
 				C7C699EB1E1800E80040CF29 /* Sources */,
 				C7C699EC1E1800E80040CF29 /* Frameworks */,
 				C7C699ED1E1800E80040CF29 /* Resources */,
+				31EEEE7F47B256D6C1367890 /* [CP] Embed Pods Frameworks */,
+				3595D6E8F012D9B31A22775E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,11 +168,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31EEEE7F47B256D6C1367890 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopupDialogTableView/Pods-PopupDialogTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3595D6E8F012D9B31A22775E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopupDialogTableView/Pods-PopupDialogTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B77B679D84CA48309B160B60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7C699EB1E1800E80040CF29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C69A071E1806790040CF29 /* PopupTableViewController.swift in Sources */,
+				C7C69A091E180B560040CF29 /* PopupTableViewCell.swift in Sources */,
+				C7C69A051E1803A10040CF29 /* PopupTableView.swift in Sources */,
 				C7C699F51E1800E80040CF29 /* ViewController.swift in Sources */,
 				C7C699F31E1800E80040CF29 /* AppDelegate.swift in Sources */,
 			);
@@ -257,6 +344,7 @@
 		};
 		C7C69A021E1800E80040CF29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A153E064EE710C60BE20EF93 /* Pods-PopupDialogTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q249KDW6P6;
@@ -270,6 +358,7 @@
 		};
 		C7C69A031E1800E80040CF29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D40C0AF78D9849CDE1093A /* Pods-PopupDialogTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q249KDW6P6;
@@ -300,6 +389,7 @@
 				C7C69A031E1800E80040CF29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,6 @@
+framework module Pods_PopupDialogTableView {
+  umbrella header "Pods-PopupDialogTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
